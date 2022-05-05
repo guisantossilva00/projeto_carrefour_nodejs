@@ -1,0 +1,228 @@
+<main>
+    <div class="flex-center">
+        <div class="limite">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active banner-desc" data-bs-interval="2000">
+                    <a href="#"><img src="img/maquinadesc.jpg" alt="Desconto nas máquinas de levar"></a>
+                </div>
+                <div class="carousel-item banner-desc" data-bs-interval="2000">
+                    <a href="#"><img src="img/celulardesc.jpg" alt="Desconto nas máquinas de levar"></a>
+                </div>
+                <div class="carousel-item banner-desc" data-bs-interval="2000">
+                    <a href="#"><img src="img/eletrodesc.jpg" alt="Desconto nas máquinas de levar"></a>
+                </div>
+                <div class="carousel-item banner-desc" data-bs-interval="2000">
+                    <a href="#"><img src="img/pneusdesc.jpg" alt="Desconto nas máquinas de levar"></a>
+                </div>
+            </div>
+            <button class="carousel-control-prev btn-passar" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="flex-center">
+        <div class="flex-between limite banner2">
+            <div class="banner-ofertas">
+                <a href="#"><img src="img/ofer1.jpg" alt="desconto burigoto"></a>
+            </div>
+            <div class="banner-ofertas">
+                <a href="#"><img src="img/ofer2.jpg" alt="desconto burigoto"></a>
+            </div>
+            <div class="banner-ofertas">
+                <a href="#"><img src="img/ofer3.jpg" alt="desconto burigoto"></a>
+            </div>
+        </div>
+    </div>
+    <section class="flex-center">
+        <div class="limite">
+            <div class="chamadas">
+                <h2>Os melhores smartphones, pra você escolher!</h2>
+            </div>
+            <div class="flex-start carrosel-card">
+                {{#each smartphone}}
+                    <div class="card-produto">
+                        <div class="img-produto">
+                            <img src="{{imagem}}" alt="Imagem de celular">
+                        </div>
+                        <div class="textos-produto">
+                            <div class="descri-produto">
+                                <p>{{titulo}}</p>
+                            </div>
+                            <div class="preco-produto">
+                                <p>{{preco}}</p>
+                                <span class="preco-produto-avista">em 1x no cartão ou boleto</span>
+                            </div>
+                        </div>
+                        <div class="btn-produto">
+                            <button class="comprar-btn" onclick="window.location='/produtounico/{{id}}'">Comprar</button>
+                            <button class="car-btn">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    {{else}}
+                {{/each}}
+            </div>
+        </div>
+    </section>
+    <section class="flex-center">
+        <div class="limite">
+            <div class="chamadas">
+                <h2>Categorias pra você escolher!</h2>
+            </div>
+            <div class="flex-between flex-circulo flex-warp">
+                <a href="/categoria/smartphone">
+                    <div class="circulo flex-center">
+                        <img src="img/smartphone.png" alt="icone de smartphone">
+                        <p>Smartphones</p>
+                    </div>
+                </a>
+                <a href="/categoria/cama">
+                    <div class="circulo-w flex-center">
+                        <img src="img/sofa.png" alt="icone de sofá">
+                        <p>Moveis</p>
+                    </div>
+                </a>
+                <a href="/categoria/autos">
+                    <div class="circulo-w flex-center">
+                        <img src="img/carro.png" alt="icone de carro">
+                        <p>Autos</p>
+                    </div>
+                </a>
+                <a href="/categoria/eletrodomesticos">
+                    <div class="circulo flex-center">
+                        <img src="img/geladeira.png" alt="icone de geladeira">
+                        <p>Eletrodomésticos</p>
+                    </div>
+                </a>
+                <a href="/categoria/eletrodomesticos">
+                    <div class="circulo flex-center">
+                        <img src="img/liquidificador.png" alt="icone de liquidificador">
+                        <p>Eletroportáteis</p>
+                    </div>
+                </a>
+                <a href="/categoria/esportes">
+                    <div class="circulo flex-center">
+                        <img src="img/esportes.png" alt="icone de máquina">
+                        <p>Esportes</p>
+                    </div>
+                </a>
+                <a href="/categoria/audio">
+                    <div class="circulo flex-center">
+                        <img src="img/som.png" alt="icone de sofá">
+                        <p>Áudio</p>
+                    </div>
+                </a>
+                <a href="/categoria/informatica">
+                    <div class="circulo flex-center">
+                        <img src="img/notebook.png" alt="icone de notebook">
+                        <p>Notebooks</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="flex-center">
+        <div class="limite">
+            <div class="chamadas">
+                <h2>Desconto em pneus, pra você!</h2>
+            </div>
+            <div class="desc-pneus">
+                <a href="#"><img src="img/pneus.jpg" alt="Imagem de desconto na compra de pneus"></a>
+            </div>
+        </div>
+    </section>
+    <section class="flex-center">
+        <div class="limite secao-destaque">
+            <div class="chamadas">
+                <h2>Os melhores da informática, pra você escolher!</h2>
+            </div>
+            <div class="flex-start carrosel-card">
+                {{#each informatica}}
+                    <div class="card-produto">
+                        <div class="img-produto">
+                            <img src="{{imagem}}" alt="Imagem de celular">
+                        </div>
+                        <div class="textos-produto">
+                            <div class="descri-produto">
+                                <p>{{titulo}}</p>
+                            </div>
+                            <div class="preco-produto">
+                                <p>{{preco}}</p>
+                                <span class="preco-produto-avista">em 1x no cartão ou boleto</span>
+                            </div>
+                        </div>
+                        <div class="btn-produto">
+                            <button class="comprar-btn" onclick="window.location='/produtounico/{{id}}'">Comprar</button>
+                            <button class="car-btn">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    {{else}}
+                {{/each}}
+            </div>
+        </div>
+    </section>
+    <section class="flex-center">
+        <div class="limite secao-destaque">
+            <div class="chamadas">
+                <h2>Sua loja preferida, com descontos incríveis!</h2>
+            </div>
+            <div class="flex-between flex-warp flex-circulo">
+                <div class="promo">
+                    <a href="#"><img src="img/promo1.jpg" alt="promoção"></a>
+                </div>
+                <div class="promo">
+                    <a href="#"><img src="img/promo2.jpg" alt="promoção"></a>
+                </div>
+                <div class="promo">
+                    <a href="#"><img src="img/promo3.jpg" alt="promoção"></a>
+                </div>
+                <div class="promo">
+                    <a href="#"><img src="img/promo4.jpg" alt="promoção"></a>
+                </div>
+                <div class="promo">
+                    <a href="#"><img src="img/promo5.jpg" alt="promoção"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="flex-center">
+        <div class="limite secao-destaque">
+            <div class="chamadas">
+                <h2>As melhores telvevisões, pra você escolher!</h2>
+            </div>
+            <div class="flex-start carrosel-card">
+                 {{#each tvs}}
+                    <div class="card-produto">
+                        <div class="img-produto">
+                            <img src="{{imagem}}" alt="Imagem de celular">
+                        </div>
+                        <div class="textos-produto">
+                            <div class="descri-produto">
+                                <p>{{titulo}}</p>
+                            </div>
+                            <div class="preco-produto">
+                                <p>{{preco}}</p>
+                                <span class="preco-produto-avista">em 1x no cartão ou boleto</span>
+                            </div>
+                        </div>
+                        <div class="btn-produto">
+                            <button class="comprar-btn" onclick="window.location='/produtounico/{{id}}'">Comprar</button>
+                            <button class="car-btn">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    {{else}}
+                {{/each}}
+            </div>
+        </div>
+    </section>
+    <div class="fale-carina">
+        <a href="https://api.whatsapp.com/send?phone=551130042222=Ol%C3%A1,%20eu%20sou%20a%20Carina,%20assistente%20virtual%20do%20Carrefour.%20Precisa%20de%20ajuda?%20Manda%20um%20%22Oi%22%20pra%20mim" target="_blank"><img src="https://carrefourbr.vtexassets.com/assets/vtex.file-manager-graphql/images/5b00d082-e220-484c-a153-ccf0ddeefd0e___fbd5e0ded609489cfb7e251b88fbcd98.jpg" alt="Fale com a Carina"></a>
+    </div>
+</main>

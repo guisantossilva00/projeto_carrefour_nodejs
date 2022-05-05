@@ -1,0 +1,23 @@
+<div id="modal-login" class="modal-login flex-center">    
+    <div class="login-user flex-center">
+        <button id="fechar-modal" class="flex-center">x</button>
+        <img src="../img/carrefourlogo.png">
+        <form action="/login" method="post" class="">
+            <div class="campos-login">
+                <label for="email">Informe o seu E-mail:</label>
+                <input type="email" id="email_login" name="email" placeholder="seuemail@exemplo.com.br">
+                <label id="erroEmailLogin"class="errotext">Email não informado</label>
+            </div>
+            <div class="campos-login">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha_login" name="senha" placeholder="Coloque a sua senha">
+                <label id="erroSenhaLogin"class="errotext">Senha não informada</label>
+            </div>
+            <input type="submit" class="btn-cadastrar" value="Entrar" onclick="return validarLogin()">
+        
+            <div>
+                <a href="/cadastro" >Cadastre-se</a>
+            </div>
+        </form>
+    </div>
+</div>

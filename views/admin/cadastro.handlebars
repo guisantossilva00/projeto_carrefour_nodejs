@@ -1,0 +1,37 @@
+<div class="flex-center">
+    <div class="limite">
+        {{#each erros}} {{!-- estrutura do handlebars --}}
+            <div class="alert alert-danger">{{texto}}</div>
+            {{else}} <!-- irá printar na tela o valor de texto do arquivo addcategorias.handlebars -->
+        {{/each}}
+    </div>
+</div>
+<div class="flex-center">   
+    <form action="/cadastro" method="post" class="form-cadastro flex-center flex-column">
+        <div class="form-titulo">
+           <h3>Crie sua conta no Carrefour</h3>
+           <p>Os campos com * são obrigatórios</p>
+        </div>
+        <div class="campos-login">
+            <label for="nome">Informe o seu Nome:*</label>
+            <input type="text" id="nome" name="nome" placeholder="Ex.: João Batista">
+            <label id="erroNome"class="errotext">Nome não informada</label>
+        </div>
+        <div class="campos-login">
+            <label for="email">Informe o seu E-mail:*</label>
+            <input type="email" id="email" name="email" placeholder="Ex.: seuemail@exemplo.com.br">
+            <label id="erroEmail"class="errotext">Email não informado</label>
+        </div>
+        <div class="campos-login">
+            <label for="senha">Informe a senha:*</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite a sua senha">
+            <label id="erroSenha"class="errotext">Senha não informada</label>
+        </div>
+        <div class="campos-login">
+            <label for="data_nascimento">Data nascimento:*</label>
+            <input type="date" id="data_nascimento" name="data_nascimento">
+            <label id="erroData" class="errotext">Data não informada</label>
+        </div>
+        <input class="btn-cadastrar" type="submit" onclick="return validarCadastro()" value="Cadastrar">
+    </form>
+</div>

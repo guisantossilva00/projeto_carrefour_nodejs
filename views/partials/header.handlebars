@@ -1,0 +1,100 @@
+<header>
+    <div class="fundo-header">
+        <div class="flex-center">
+            <div class="limite flex-between flex-align">
+                <div class="links-header flex-between">
+                    <a href="https://www.carrefour.com.br/marketplace">Venda no Marketplace</a>
+                    <a href="#televendas">Televendas</a>
+                    <a href="https://www.carrefour.com.br/localizador-de-lojas">Nossas lojas</a>
+                    <a href="https://www.carrefour.com.br/atendimento">Atendimento</a>
+                    <a href="https://www.carrefour.com.br/click-e-retire?crfint=hm|header|click-e-retire|4|270520">Click & Retire</a>
+                    <a href="https://www.carrefour.com.br/meucarrefour">Baixa o app</a>
+                </div>
+
+                <div class="redes-header flex-between">
+                    <a href="https://www.facebook.com/CarrefourBR/" target="_blank"><img src="../img/facebook.png" alt="facebook do carrefour"></a>
+                    <a href="https://twitter.com/carrefourbrasil/" target="_blank"><img src="../img/twitter.png" alt="twitter do carrefour"></a>
+                    <a href="https://www.instagram.com/accounts/login/?next=/carrefourbrasil/" target="_blank"><img src="../img/instagram.png" alt="instagram do carrefour"></a>
+                    <a href="https://www.youtube.com/user/carrefourbrasil" target="_blank"><img src="../img/youtube.png" alt="youtube do carrefour"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fixedHeader" class="sup flex-center">
+        <div class="limite flex-between">
+            <div class="logo-sup">
+                <a href="/"><img src="/img/carrefourlogo.png" alt="logo do Carrefour" title="Logo do Carrefour"></a>
+            </div>
+            <div class="pesquisa-header">
+                <input type="search" placeholder="Pesquise por produtos ou marcas">
+                <div class="lupa-header flex-center">
+                    <img src="/img/lupa.png" alt="Lupa de pesquisa" title="Lupa de pesquisa">
+                </div>
+            </div>
+            <div class="flex-between header-direita">
+                <div class="login" id="login">
+                    <p class="flex-center caixa-header"><img src="/img/login.png" alt="Icone de login" title="Icone de login"><span class="cel-resp flex-column">{{>usuariologin}}</span></p>
+                </div>
+                <div class="login caixa-meus">
+                    <p class="flex-center caixa-header"><img src="/img/caixa.png" alt="Icone de pedidos" title="Icone de pedidos">Meus pedidos</p>
+                </div>
+                <div class="login">
+                    <p class="flex-center caixa-header"><img src="/img/carrinho.png" alt="Icone de carrinho" title="Icone de carrinho"><span class="cel-resp">Meu carrinho</span></p>
+                    <div class="cont-carrinho flex-center">
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="nav flex-center">
+        <div class="limite">
+            <nav class="menu">
+                <ul class="flex-between">                        
+                    <li><a href="/categoria/smartphone">Smartphones</a></li>
+                    <li><a href="/categoria/eletrodomesticos">Eletrodomésticos</a></li>
+                    <li><a href="/categoria/tvs">Tvs e Vídeo</a></li>
+                    <li><a href="/categoria/informatica">Informática</a></li>
+                    <li><a href="/categoria/autos">Pneus & Auto</a></li>
+                    <li><a href="/categoria/climatizacao">Climatização</a></li>
+                    <li><a href="/categoria/esportes">Esporte e Lazer</a></li>
+                    <li><a href="/categoria/cama">Cama, Mesa e Banho</a></li>
+                    <li><a href="/categoria/audio">Áudio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="fixedHeaderResponsivo" class="flex-center">
+        <div class="limite">
+            <div class="menu-responsivo">
+                <input type="checkbox" class="menu-input" id="check">
+                <label for="check" id="toggle" class="menu-bar">
+                </label>
+                <nav id="header-menu" class="menu-links">
+                    <ul>                        
+                        <li><a href="/categoria/smartphone">Smartphones</a></li>
+                        <li><a href="/categoria/eletrodomesticos">Eletrodomésticos</a></li>
+                        <li><a href="/categoria/tvs">Tvs e Vídeo</a></li>
+                        <li><a href="/categoria/informatica">Informática</a></li>
+                        <li><a href="/categoria/autos">Pneus & Auto</a></li>
+                        <li><a href="/categoria/climatizacao">Climatização</a></li>
+                        <li><a href="/categoria/esportes">Esporte e Lazer</a></li>
+                        <li><a href="/categoria/cama">Cama, Mesa e Banho</a></li>
+                        <li><a href="/categoria/audio">Áudio</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="flex-center pesquisa-responsivo">
+        <div class="limite">
+            <div class="pesquisa-header-res">
+                <input type="search" placeholder="Pesquise por produtos ou marcas">
+                <div class="lupa-header flex-center">
+                    <img src="/img/lupa.png" alt="Lupa de pesquisa" title="Lupa de pesquisa">
+                </div>
+            </div>
+        </div>
+    </div>
+    {{>login}}
+</header>
